@@ -3,7 +3,6 @@ ARP.RegisteredEvent = ARP.RegisteredEvent or {}
 ARP.Commands = {}
 ARP.RegisterCommands =  {}
 
-
 function ARP.Events.AddEvent(self, module, func, name)
     ARP.RegisteredEvent[name] = { mod = module, f = func }
 end
@@ -22,8 +21,8 @@ end
 
 function ARP.Commands.AddCommand(self, command, suggestion, source, cb, args)
 	if ARP.RegisterCommands[command] then return end
-		table.insert(ARP.RegisterCommands, { ['command'] = command, ['suggestion'] = suggestion, ['args'] = args })
-		ARP.RegisterCommands[command] = true
+	table.insert(ARP.RegisterCommands, { ['command'] = command, ['suggestion'] = suggestion, ['args'] = args })
+	ARP.RegisterCommands[command] = true
 	cb(ok)
 end
 

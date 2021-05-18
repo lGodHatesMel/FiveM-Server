@@ -1,24 +1,24 @@
 ARP.LocalPlayer = ARP.LocalPlayer or {}
 
-local function GetUser()
+local function GetPlayerData()
     return ARP.LocalPlayer
 end
 
 function ARP.LocalPlayer.setVar(self, var, data)
-    GetUser()[var] = data
+    GetPlayerData()[var] = data
 end
 
 function ARP.LocalPlayer.getVar(self, var)
-    return GetUser()[var]
+    return GetPlayerData()[var]
 end
 
 function ARP.LocalPlayer.setCurrentCharacter(self, data)
     if not data then return end
-    GetUser():setVar("character", data)
+    GetPlayerData():setVar("character", data)
 end
 
 function ARP.LocalPlayer.getCurrentCharacter(self)
-    return GetUser():getVar("character")
+    return GetPlayerData():getVar("character")
 end
 
 

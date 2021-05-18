@@ -6,12 +6,13 @@ client_script "@PolyZone/client.lua"
 
 server_scripts {
     'shared.lua',
-    'sv_*.lua'
+    'server/sv_*.lua'
 }
 
 client_scripts {
     'shared.lua',
-    'cl_*.lua'
+    'cl_cache.lua',
+    'client/cl_*.lua'
 }
 
 ui_page 'html/index.html'
@@ -22,17 +23,14 @@ files {
     "html/css/style.css"
 }
 
-exports {
-    "taskBar",
-    "closeGuiFail",
-    "getModule",
-    "addModule",
-    "FetchVehProp",
-    "SetVehProps",
-	"getCacheData"
-}
 
-server_exports {
-    "getModule",
-    "addModule"
-}
+export "taskbar"
+export "closeGuiFail"
+export "getModule"
+export "addModule"
+export "FetchVehProps"
+export "SetVehProps"
+export "getCacheData"
+
+server_export "getModule"
+server_export "addModule"

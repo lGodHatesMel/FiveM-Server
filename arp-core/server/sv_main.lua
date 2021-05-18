@@ -25,7 +25,7 @@ RegisterNetEvent("arp-base:playerSessionStarted")
 AddEventHandler("arp-base:playerSessionStarted", function()
 	local _source = source
 	local name = GetPlayerName(_source)
-	local player = ARP.Player:GetUser(_source)
+	local player = ARP.Player:GetPlayerData(_source)
 	if player then exports["arp-logs"]:AddLog("Player Left", player, player:getVar("name").." Has joined the server") end
 	print("^0" .. name .. "^7 spawned into the server")
 end)

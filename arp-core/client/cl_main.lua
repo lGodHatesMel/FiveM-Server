@@ -74,7 +74,7 @@ AddEventHandler("arp-base:playerSessionStarted", function()
         Wait(100)
     end
     ShutdownLoadingScreen()
-    ARP.SpawnManager:Initialize()
+    ARP.Spawn:Initialize()
 end)
 
 AddEventHandler("arp-base:firstSpawn", function()
