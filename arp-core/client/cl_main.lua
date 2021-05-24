@@ -108,7 +108,6 @@ AddEventHandler('arp-base:playerLoggedOut', function()
     TriggerEvent("nowCopDeathOff")
     TriggerEvent("ResetFirstSpawn")
     TriggerEvent("stopSpeedo")
-    TriggerServerEvent("TokoVoip:removePlayerFromAllRadio",GetPlayerServerId(PlayerId()))
     TriggerEvent("wk:disableRadar")
 end)
 
