@@ -67,48 +67,28 @@ ARP.Controls.Default = {
 }
 
 ARP.Controls.events = {
-	["lowActionItems"] = {
-		[0] = {["event"] = "",["bind"] = "",["id"] = 3},
-	},
 	["general"] = {
 		[0] = {["event"] = "police",["bind"] = "vehicleCruise",["id"] = 1,["maxwait"] = 1000},
 		[1] = {["event"] = "police",["bind"] = "generalTackle",["id"] = 2,["maxwait"] = 1000},
 		[2] = {["event"] = "police",["bind"] = "tokoptt",["id"] = 3,["maxwait"] = 1000},
-		[3] = {["event"] = "police",["bind"] = "generalMenu",["id"] = 8,["maxwait"] = 1000}, -- uhm unsure
-		-- search and hotwire
+		[3] = {["event"] = "police",["bind"] = "generalMenu",["id"] = 8,["maxwait"] = 1000},
 		[4] = {["event"] = "hotwire",["bind"] = "vehicleSearch",["id"] = 1,["maxwait"] = 1000},
 		[5] = {["event"] = "hotwire",["bind"] = "vehicleHotwire",["id"] = 2,["maxwait"] = 1000},
-		-- news action items
 		[6] = {["event"] = "newsJob",["bind"] = "newsTools",["id"] = 1,["maxwait"] = 200},
 		[7] = {["event"] = "newsJob",["bind"] = "newsNormal",["id"] = 2,["maxwait"] = 200},
 		[8] = {["event"] = "newsJob",["bind"] = "newsMovie",["id"] = 3,["maxwait"] = 200},
-		--drop propattach 
 		[9] = {["event"] = "propAttach",["bind"] = "generalProp",["id"] = 1,["maxwait"] = 1000},
-		-- radio
 		[10] = {["event"] = "taskBar",["bind"] = "handheld",["id"] = 1,["maxwait"] = 1000},
-		-- phone
 		[11] = {["event"] = "taskBar",["bind"] = "carStereo",["id"] = 2,["maxwait"] = 1000},
-		-- car stereo
 		[12] = {["event"] = "taskBar",["bind"] = "generalPhone",["id"] = 3,["maxwait"] = 1000},
-		-- inventoryh
 		[13] = {["event"] = "taskBar",["bind"] = "generalInventory",["id"] = 4,["maxwait"] = 1000},
-		-- escape from gui taskbar
 		[14] = {["event"] = "taskBar",["bind"] = "generalEscapeMenu",["id"] = 5,["maxwait"] = 1000},
-		-- toggle car door lock
 		[15] = {["event"] = "cardoors",["bind"] = "vehicleDoors",["id"] = 1,["maxwait"] = 1000},
-		-- toggle belt
 		[16] = {["event"] = "vehicleMod",["bind"] = "vehicleBelt",["id"] = 1,["maxwait"] = 1000},
-		-- switch emergency radio
-		-- ARP CHECK THESE
-		[17] = {["event"] = "tokoChangeEmergency",["bind"] = "switchRadioEmergency",["id"] = 1,["maxwait"] = 1000},
-		[18] = {["event"] = "police", ["bind"] = "showDispatchLog",["id"] = 9,["maxwait"] = 1000},
-		[19] = {["event"] = "tokoChangeVolume",["bind"] = "radiovolumedown",["id"] = 1,["maxwait"] = 200},
-		[20] = {["event"] = "tokoChangeVolume",["bind"] = "radiovolumeup",["id"] = 2,["maxwait"] = 200},
-		[21] = {["event"] = "tokoRadioToggle",["bind"] = "radiotoggle",["id"] = 1,["maxwait"] = 200},
-		[22] = {["event"] = "adminDev",["bind"] = "devmenu",["id"] = 1,["maxwait"] = 200},
-		[23] = {["event"] = "adminDev",["bind"] = "devnoclip",["id"] = 2,["maxwait"] = 200},
-		[24] = {["event"] = "adminDev",["bind"] = "devcloak",["id"] = 3,["maxwait"] = 200},
-		[25] = {["event"] = "adminDev",["bind"] = "devmarker",["id"] = 4,["maxwait"] = 200},
+		[17] = {["event"] = "adminDev",["bind"] = "devmenu",["id"] = 1,["maxwait"] = 200},
+		[18] = {["event"] = "adminDev",["bind"] = "devnoclip",["id"] = 2,["maxwait"] = 200},
+		[19] = {["event"] = "adminDev",["bind"] = "devcloak",["id"] = 3,["maxwait"] = 200},
+		[20] = {["event"] = "adminDev",["bind"] = "devmarker",["id"] = 4,["maxwait"] = 200},
 	},
 	["general-dist"] = {
 		[0] = {["event"] = "distanceCheck",["bind"] = "generalUse",["distanceName"] = "use"},
